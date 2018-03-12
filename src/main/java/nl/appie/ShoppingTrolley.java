@@ -4,11 +4,10 @@ import java.util.ArrayList;
 
 public class ShoppingTrolley {
 
+    ArrayList<Product> contentsOfTrolley;
+
     public void addProduct(Product product){
-
-        Product mijnProduct = new Product();
-
-
+        contentsOfTrolley.add(Product product);
     }
 
 

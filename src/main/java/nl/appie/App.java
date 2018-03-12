@@ -4,8 +4,10 @@ public class App
 {
     public static void main( String[] args ) {
 
+        Store myStore = Store.myStore();
+
         ShoppingTrolley myTrolley = new ShoppingTrolley();
 
-        myTrolley.addProduct(Product product);
+        myTrolley.addProduct(Product);
     }
 }
