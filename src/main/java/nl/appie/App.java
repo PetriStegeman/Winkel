@@ -4,8 +4,8 @@ public class App
 {
     public static void main( String[] args ) {
 
-        ShoppingTrolley mijnTrolley = new ShoppingTrolley();
+        ShoppingTrolley myTrolley = new ShoppingTrolley();
 
-        mijnTrolley.addProduct(Product product);
+        myTrolley.addProduct(Product product);
     }
 }
