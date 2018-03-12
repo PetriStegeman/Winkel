@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Store {
 
+    ArrayList<Product> storeInventory;
+
+
+    //Moet alternatief voor bedenken
     public static Store myStore(){
         ArrayList<Product> storeContents = new ArrayList<Product>();
 
@@ -18,7 +22,14 @@ public class Store {
         storeContents.add(iceTea);
 
         return new Store(ArrayList<Product> storeContents);
+    }
 
+    public void addProduct(Product product){
+        storeInventory.add(Product product);
+    }
+
+    public void removeProduct (Product product){
+        storeInventory.remove(Product product);
     }
 
 }

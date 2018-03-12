@@ -10,5 +10,8 @@ public class ShoppingTrolley {
         contentsOfTrolley.add(Product product);
     }
 
+    public void removeProduct (Product product){
+        contentsOfTrolley.remove(Product product);
+    }
 
 }

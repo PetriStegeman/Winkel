@@ -9,5 +9,9 @@ public class App
         ShoppingTrolley myTrolley = new ShoppingTrolley();
 
         myTrolley.addProduct(Product);
+
+        myTrolley.addProduct(Product);
+
+
     }
 }
