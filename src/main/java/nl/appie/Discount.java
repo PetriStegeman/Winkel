@@ -5,18 +5,31 @@ import java.util.List;
 
 public class Discount {
 
+    private int discountID;
     private String beschrijving;
     private List<EWeekdays> weekdays;
 
-
-    //2 voor 1 op woensdag
-public void setDiscount1(Product product){
-
-    if(product.isDiscounted()){
-        product.setPrice(product.getPrice()/2);
+    public int getDiscountID() {
+        return discountID;
     }
 
-}
+    public void setDiscountID(int discountID) {
+        this.discountID = discountID;
+    }
 
+    public String getBeschrijving() {
+        return beschrijving;
+    }
 
+    public void setBeschrijving(String beschrijving) {
+        this.beschrijving = beschrijving;
+    }
+
+    public List<EWeekdays> getWeekdays() {
+        return weekdays;
+    }
+
+    public void setWeekdays(List<EWeekdays> weekdays) {
+        this.weekdays = weekdays;
+    }
 }
