@@ -7,6 +7,7 @@ public class Store {
 
     private static List<Product> storeInventory;
     private static List<Costumer> costumerInStore;
+    private static List<ShoppingTrolley> shoppingTrolleys;
 
     public static List<Product> getStoreInventory() {
         return storeInventory;
@@ -24,18 +25,42 @@ public class Store {
         Store.costumerInStore = costumerInStore;
     }
 
+    public static List<ShoppingTrolley> getShoppingTrolleys() {
+        return shoppingTrolleys;
+    }
+
+    public static void setShoppingTrolleys(List<ShoppingTrolley> shoppingTrolleys) {
+        Store.shoppingTrolleys = shoppingTrolleys;
+    }
+
     public void initAllLists() {
         storeInventory = new ArrayList<>();
         costumerInStore = new ArrayList<>();
+        shoppingTrolleys = new ArrayList<>();
     }
 
 
     public static void addProduct(Product product){
-        storeInventory.add(Product product);
+        storeInventory.add(product);
     }
 
     public static void removeProduct (Product product){
-        storeInventory.remove(Product product);
+        storeInventory.remove(product);
     }
 
+    public static void addTrolley(ShoppingTrolley shoppingTrolley){
+        shoppingTrolleys.add(shoppingTrolley);
+    }
+
+    public static void removeTrolley (ShoppingTrolley shoppingTrolley){
+        shoppingTrolleys.remove(shoppingTrolley);
+    }
+
+    public static void addCostumer(Costumer costumer){
+        shoppingTrolleys.add(costumerInStore);
+    }
+
+    public static void removeCostumer (Costumer costumer){
+        shoppingTrolleys.remove(costumerInStore);
+    }
 }

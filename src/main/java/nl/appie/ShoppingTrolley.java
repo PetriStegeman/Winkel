@@ -15,4 +15,19 @@ public class ShoppingTrolley {
         contentsOfTrolley.remove(myProduct);
     }
 
+    public ArrayList<Product> getContentsOfTrolley() {
+        return contentsOfTrolley;
+    }
+
+    public void setContentsOfTrolley(ArrayList<Product> contentsOfTrolley) {
+        this.contentsOfTrolley = contentsOfTrolley;
+    }
+
+    public Costumer getCostumer() {
+        return costumer;
+    }
+
+    public void setCostumer(Costumer costumer) {
+        this.costumer = costumer;
+    }
 }

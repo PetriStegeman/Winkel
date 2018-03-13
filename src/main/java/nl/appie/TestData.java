@@ -20,4 +20,10 @@ public class TestData {
         Store.addProduct(iceTea);
     }
 
+    public static void newCostumer(){
+       //new costumer
+
+    }
+
+
 }
