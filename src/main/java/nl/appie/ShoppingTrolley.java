@@ -4,14 +4,15 @@ import java.util.ArrayList;
 
 public class ShoppingTrolley {
 
-    ArrayList<Product> contentsOfTrolley;
+    private ArrayList<Product> contentsOfTrolley;
+    private Costumer costumer;
 
-    public void addProduct(Product product){
-        contentsOfTrolley.add(Product product);
+    public void addProduct(Product myProduct){
+        contentsOfTrolley.add(myProduct);
     }
 
-    public void removeProduct (Product product){
-        contentsOfTrolley.remove(Product product);
+    public void removeProduct (Product myProduct){
+        contentsOfTrolley.remove(myProduct);
     }
 
 }

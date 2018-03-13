@@ -6,9 +6,10 @@ public class Product {
     private double price;
     private boolean isDiscounted;
 
-    public Product(String name, double price) {
+    public Product(String name, double price, boolean isDiscounted) {
         this.name = name;
         this.price = price;
+        this.isDiscounted = isDiscounted;
     }
 
     public String getName() {

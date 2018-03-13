@@ -4,7 +4,9 @@ public class App
 {
     public static void main( String[] args ) {
 
-        Store myStore = Store.myStore();
+        TestData.generateData();
+
+        //below idk just fking about
 
         ShoppingTrolley myTrolley = new ShoppingTrolley();
 

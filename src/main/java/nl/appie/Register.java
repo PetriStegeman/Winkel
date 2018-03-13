@@ -3,11 +3,21 @@ package nl.appie;
 import java.util.ArrayList;
 
 public class Register {
-    
- int moneyOffered;
- int totalOwed;
- int change;
 
- //public double whatIsChange(int moneyOffered, int totalOwed);
+    private double moneyOffered;
+    private double totalOwed;
+    private double change;
+
+    public double totalOwed(ShoppingTrolley myTrolley){
+        for (ShoppingTrolley items: myTrolley) {
+            
+        }
+        myTrolley.get()
+    }
+
+    public double whatIsChange(double moneyOffered, double totalOwed, double discount) {
+        double change = moneyOffered - totalOwed - discount;
+        return change;
+    }
 
 }
