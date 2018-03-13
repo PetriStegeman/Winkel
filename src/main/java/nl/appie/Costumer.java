@@ -2,8 +2,17 @@ package nl.appie;
 
 public class Costumer {
 
-    private int customerID;
+    private static int ccstumerIDCounter = 1;
+    private int costumerID;
     private boolean hasPaid;
+
+    public static void checkIn(){
+        Costumer costumer = new Costumer(getCcstumerIDCounter()+ 1);
+        setCcstumerIDCounter(getCcstumerIDCounter()+ 1);
+        Store.addCostumer(costumer);
+        ShoppingTrolley trolley = new ShoppingTrolley(costumer);
+        Store.addTrolley(trolley);
+    }
 
     public void checkOut(ShoppingTrolley shoppingTrolley){
         Store.removeTrolley(shoppingTrolley);
@@ -19,11 +28,23 @@ public class Costumer {
         }
     }
 
-    public int getCustomerID() {
-        return customerID;
+    public Costumer(int costumerID) {
+        this.costumerID = costumerID;
     }
 
-    public void setCustomerID(int customerID) {
-        this.customerID = customerID;
+    public int getCostumerID() {
+        return costumerID;
+    }
+
+    public void setCostumerID(int costumerID) {
+        this.costumerID = costumerID;
+    }
+
+    public static int getCcstumerIDCounter() {
+        return ccstumerIDCounter;
+    }
+
+    public static void setCcstumerIDCounter(int ccstumerIDCounter) {
+        Costumer.ccstumerIDCounter = ccstumerIDCounter;
     }
 }

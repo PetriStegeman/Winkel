@@ -6,13 +6,9 @@ public class App
 
         TestData.generateData();
 
-        //below idk just fking about
+        Costumer costumer = Costumer.checkIn();
 
-        ShoppingTrolley myTrolley = new ShoppingTrolley();
 
-        myTrolley.addProduct(Product);
-
-        myTrolley.addProduct(Product);
 
 
     }

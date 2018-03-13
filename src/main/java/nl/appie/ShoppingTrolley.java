@@ -7,6 +7,10 @@ public class ShoppingTrolley {
     private ArrayList<Product> contentsOfTrolley;
     private Costumer costumer;
 
+    public ShoppingTrolley(Costumer costumer) {
+        this.costumer = costumer;
+    }
+
     public void addProduct(Product myProduct){
         contentsOfTrolley.add(myProduct);
     }
