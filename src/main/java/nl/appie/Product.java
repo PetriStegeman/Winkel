@@ -4,12 +4,10 @@ public class Product {
 
     private String name;
     private double price;
-    private boolean isDiscounted;
 
     public Product(String name, double price, boolean isDiscounted) {
         this.name = name;
         this.price = price;
-        this.isDiscounted = isDiscounted;
     }
 
     public String getName() {
@@ -28,11 +26,4 @@ public class Product {
         this.price = price;
     }
 
-    public boolean isDiscounted() {
-        return isDiscounted;
-    }
-
-    public void setDiscounted(boolean discounted) {
-        isDiscounted = discounted;
-    }
 }

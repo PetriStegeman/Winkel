@@ -8,7 +8,6 @@ public class Store {
     private static List<Product> storeInventory;
     private static List<Costumer> costumerInStore;
     private static List<ShoppingTrolley> shoppingTrolleys;
-    private static List<Discount> discounts;
 
     public static List<Product> getStoreInventory() {
         return storeInventory;
@@ -41,34 +40,27 @@ public class Store {
     }
 
 
-    public static void addProduct(Product product){
+    public static void addProduct(Product product) {
         storeInventory.add(product);
     }
 
-    public static void removeProduct (Product product){
+    public static void removeProduct(Product product) {
         storeInventory.remove(product);
     }
 
-    public static void addTrolley(ShoppingTrolley shoppingTrolley){
+    public static void addTrolley(ShoppingTrolley shoppingTrolley) {
         shoppingTrolleys.add(shoppingTrolley);
     }
 
-    public static void removeTrolley (ShoppingTrolley shoppingTrolley){
+    public static void removeTrolley(ShoppingTrolley shoppingTrolley) {
         shoppingTrolleys.remove(shoppingTrolley);
     }
 
-    public static void addCostumer(Costumer costumer){
+    public static void addCostumer(Costumer costumer) {
         costumerInStore.add(costumer);
     }
 
-    public static void removeCostumer (Costumer costumer){
+    public static void removeCostumer(Costumer costumer) {
         costumerInStore.remove(costumer);
     }
-
-    public static void addDiscount(Discount discount){
-        discounts.add(discount);
-    }
-
-    public static void removeCostumer (Discount discount){
-        discounts.remove(discount);
 }

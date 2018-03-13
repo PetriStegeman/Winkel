@@ -6,7 +6,7 @@ public class App
 
         TestData.generateData();
 
-        Costumer costumer = Costumer.checkIn();
+        Costumer.checkIn();
 
 
 

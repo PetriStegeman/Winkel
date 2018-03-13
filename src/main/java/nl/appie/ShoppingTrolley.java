@@ -6,6 +6,8 @@ public class ShoppingTrolley {
 
     private ArrayList<Product> contentsOfTrolley;
     private Costumer costumer;
+    private double totalOwed;
+    private double totalDiscount;
 
     public ShoppingTrolley(Costumer costumer) {
         this.costumer = costumer;
@@ -33,5 +35,21 @@ public class ShoppingTrolley {
 
     public void setCostumer(Costumer costumer) {
         this.costumer = costumer;
+    }
+
+    public double getTotalOwed() {
+        return totalOwed;
+    }
+
+    public void setTotalOwed(double totalOwed) {
+        this.totalOwed = totalOwed;
+    }
+
+    public double getTotalDiscount() {
+        return totalDiscount;
+    }
+
+    public void setTotalDiscount(double totalDiscount) {
+        this.totalDiscount = totalDiscount;
     }
 }

@@ -2,13 +2,15 @@ package nl.appie;
 
 public class Costumer {
 
-    private static int ccstumerIDCounter = 1;
+    //CUSTOMER BTW
+
+    private static int costumerIDCounter = 1;
     private int costumerID;
-    private boolean hasPaid;
+    private double paysWithMoney;
 
     public static void checkIn(){
-        Costumer costumer = new Costumer(getCcstumerIDCounter()+ 1);
-        setCcstumerIDCounter(getCcstumerIDCounter()+ 1);
+        Costumer costumer = new Costumer(getCostumerIDCounter()+ 1);
+        setCostumerIDCounter(getCostumerIDCounter()+ 1);
         Store.addCostumer(costumer);
         ShoppingTrolley trolley = new ShoppingTrolley(costumer);
         Store.addTrolley(trolley);
@@ -40,11 +42,19 @@ public class Costumer {
         this.costumerID = costumerID;
     }
 
-    public static int getCcstumerIDCounter() {
-        return ccstumerIDCounter;
+    public static int getCostumerIDCounter() {
+        return costumerIDCounter;
     }
 
-    public static void setCcstumerIDCounter(int ccstumerIDCounter) {
-        Costumer.ccstumerIDCounter = ccstumerIDCounter;
+    public static void setCostumerIDCounter(int ccstumerIDCounter) {
+        Costumer.costumerIDCounter = ccstumerIDCounter;
+    }
+
+    public double getPaysWithMoney() {
+        return paysWithMoney;
+    }
+
+    public void setPaysWithMoney(double paysWithMoney) {
+        this.paysWithMoney = paysWithMoney;
     }
 }
