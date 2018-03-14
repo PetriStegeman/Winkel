@@ -4,6 +4,7 @@ public class Product {
 
     private String name;
     private double price;
+    private int inStock;
 
     public Product(String name, double price, boolean isDiscounted) {
         this.name = name;
@@ -26,4 +27,11 @@ public class Product {
         this.price = price;
     }
 
+    public int getInStock() {
+        return inStock;
+    }
+
+    public void setInStock(int inStock) {
+        this.inStock = inStock;
+    }
 }

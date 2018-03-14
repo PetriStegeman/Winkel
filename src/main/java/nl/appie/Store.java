@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Store {
-
+/*
+ * Alle lijsten van objecten die gegenereerd worden
+ * costumerInStore initialiseerd leeg
+ * shoppingTrolleys initialiseerd leeg
+ * storeInventory initialiseerd met de volledige lijst van Product objecten die aanwezig zijn
+ */
     private static List<Product> storeInventory;
     private static List<Costumer> costumerInStore;
     private static List<ShoppingTrolley> shoppingTrolleys;
