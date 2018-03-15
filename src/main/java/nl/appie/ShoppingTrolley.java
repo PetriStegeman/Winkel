@@ -9,7 +9,7 @@ public class ShoppingTrolley {
     private ArrayList<Product> contentsOfTrolley;
     private Costumer costumer;
     private double totalOwed;
-    //private double totalDiscount;
+    private double totalDiscount;
 
     public ShoppingTrolley(Costumer costumer) {
         this.costumer = costumer;

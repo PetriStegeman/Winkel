@@ -13,6 +13,9 @@ public class Store {
     private static List<Product> storeInventory;
     private static List<Costumer> costumerInStore;
     private static List<ShoppingTrolley> shoppingTrolleys;
+    private static List<Discount> discounts;
+    private static List<Product> discountedProducts;
+
 
     public static List<Product> getStoreInventory() {
         return storeInventory;
@@ -67,5 +70,21 @@ public class Store {
 
     public static void removeCostumer(Costumer costumer) {
         costumerInStore.remove(costumer);
+    }
+
+    public static List<Discount> getDiscounts() {
+        return discounts;
+    }
+
+    public static void setDiscounts(List<Discount> discounts) {
+        Store.discounts = discounts;
+    }
+
+    public static List<Product> getDiscountedProducts() {
+        return discountedProducts;
+    }
+
+    public static void setDiscountedProducts(List<Product> discountedProducts) {
+        Store.discountedProducts = discountedProducts;
     }
 }
